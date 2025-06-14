@@ -1,30 +1,46 @@
 # [bitcoincore.org](https://bitcoincore.org)
 
-This repository is the source code of the Bitcoin Core project website built with Jekyll.
+* Bitcoin Core project website's source code
 
 ## Directory structure
 
-  - `_posts/<lang>/posts` for blog articles.
-  - `_posts/<lang>/pages` for static pages.
-  - `_posts/<lang>/releases` for Bitcoin Core release notes
+- [Bitcoin Core RPC](_doc/en)
+- [IRC meetings](_posts/en/meetings)
+- [static pages](_posts/en/pages)
+- [blog articles](_posts/en/posts)
+- [Bitcoin Core release notes](_releases)
+- [Repository tools](contrib)
+- [Zurich 2016](logs)
 
-File names *must* be in the format `Y-m-d-title.md`, e.g. `2015-12-31-title.md`. File names can be translated.
-
-## Translations
-
-See [CONTRIBUTING.md](/CONTRIBUTING.md#translation-process) for more information.
+* File names format
+  * "Y-m-d-title.md"
+    * _Example:_ 2015-12-31-title.md
 
 ## Front Matter notes
 
-The following `Front Matter` is required for the multilingual setup in all files. The required fields are as follows:
-
-  - `name:`      group name for unique article. Each translation must share the same group name, e.g. `october15-report`
-  - `id:`        each article translation must have a unique ID. Use the language code + `-name` field. e.g. `en-october15-report`
-  - `permalink:` the must include the language code, end a trailing slash, e.g. `/en/2015/12/31/report/`.
-  - `title:`     the translated title of the article
-  - `type:`      the content type (`pages`, `posts`, `releases`, `meetings`, etc.)
-  - `layout:`    the layout template (`page`, `post`, etc.)
-  - `lang:`      the language code (`en`, `fr`, etc.)
+* uses
+  * multilingual setup | ALL files
+* fields
+  - `name:`
+    - group name / UNIQUE article
+    - SAME group name / EACH translation
+      - _Exmaple:_ `october15-report`
+  - `id:`
+    - TODO: each article translation must have a unique ID
+    - Use the language code + `-name` field. e.g. `en-october15-report`
+  - `permalink:`
+    - the must include the language code, end a trailing slash, e.g. `/en/2015/12/31/report/`.
+  - `title:`
+    - article's translated title 
+  - `type:`
+    - content type
+      - _Example:_ `pages`, `posts`, `releases`, `meetings`, etc.
+  - `layout:`
+    - layout template
+      - _Example:_ `page`, `post`, etc.
+  - `lang:`
+    - language code
+      - _Example:_ `en`, `fr`, etc.
 
 ```
 ---
@@ -38,9 +54,10 @@ permalink: /en/2016/01/01/short-title
 ---
 ```
 
-## Building
+## how to build?
 
-This website is based on [Jekyll](https://jekyllrb.com/).  To build
+* -- based on -- [Jekyll](https://jekyllrb.com/)
+* TODO: To build
 locally, [install Ruby 3.1.2](https://gorails.com/setup) using system
 packages, [rvm](https://rvm.io), [rbenv](https://github.com/rbenv/rbenv), or another method.
 Then clone this repository and change directory into it:
@@ -78,18 +95,10 @@ To test the site:
 The additional parameters to `jekyll build` ensure that all possible
 pages are built and checked.
 
-## Contributing
-
-Contributions welcome. Please see [CONTRIBUTING.md](/CONTRIBUTING.md) for details.
-
 ## References
 
-The website uses an old version of the [Minimal Mistakes theme][].  The
-theme's website provides [documentation][mm docs], including information
-about [configuration variables][mm config], creating [pages and posts][mm
-content], adding [new Javascript][mm js], and more.  Note that
-current documentation may describe features not available in the old
-version of the theme used by the website.
+* CURRENT website
+  * 's theme == old version of [Minimal Mistakes theme][]
 
 [minimal mistakes theme]: https://mmistakes.github.io/minimal-mistakes/
 [mm docs]: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
