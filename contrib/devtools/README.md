@@ -1,6 +1,9 @@
 Contents
 ========
-This directory contains tools for developers working on this repository.
+
+* tools
+  * uses
+    * developers working | this repository
 
 people-present.sh
 =================
